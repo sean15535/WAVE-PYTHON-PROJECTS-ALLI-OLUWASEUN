@@ -1,4 +1,3 @@
-import time  # Import the time module
 
 print("Hi, Welcome to Taxify")
 print("Whats your Name?")
@@ -35,13 +34,13 @@ if city == "a" or city == "lagos state" or city == "lagos":
                 print(f"Please have $9000 ready for your trip to Ikeja and you get ${change} from the Driver.")
                 print("Your trip to Ikeja has started. Enjoy your ride!")
                 print(f"{name}, You have arrived to your destination. Have a nice day!😊")
-                time.sleep(10)  
+                 
 
             elif payment_method == "2" or payment_method == "card":
                 print("Please proceed to pay $9000 with your card and you get ${change} from the Driver..")
                 print("Your trip to Ikeja has started. Enjoy your ride!")
                 print(f"{name}, You have arrived to your destination. Have a nice day!😊")
-                time.sleep(10)
+                
             else:
                 print("Wrong payment method, Try again ") 
         else:
@@ -63,13 +62,12 @@ if city == "a" or city == "lagos state" or city == "lagos":
                 print(f"Please have $4000 ready for your trip to Egbeda and you get ${change} from the Driver.")
                 print("Your trip to Egbeda has started. Enjoy your ride!")
                 print(f"{name}, You have arrived to your destination. Have a nice day!😊")
-                time.sleep(10)  
+                
 
             elif payment_method == "2" or payment_method == "card":
                 print("Please proceed to pay 49000 with your card and you get ${change} from the Driver..")
                 print("Your trip to Egbeda has started. Enjoy your ride!")
                 print(f"{name}, You have arrived to your destination. Have a nice day!😊")
-                time.sleep(10)
             else:
                 print("Wrong payment method, Try again ") 
         else:
