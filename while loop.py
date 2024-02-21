@@ -12,3 +12,13 @@
 #         valid = True
 #     else:
 #         print("Please enter a valid age (must be at least 18 years old).")
+
+game_over = False
+while not game_over:
+    # Game logic here
+    if player_wins():
+        print("Congratulations! You win!")
+        game_over = True
+    elif player_loses():
+        print("Game over! You lose!")
+        game_over = True
