@@ -11,3 +11,4 @@ while not game_over:
          print("You defended successfully!")
     else:
             print("Game over! You lose!")
+            break

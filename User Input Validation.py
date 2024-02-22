@@ -8,7 +8,7 @@ response = str(input("Gender: ")).upper()
 valid = False
 while not valid:
     age = input("Enter your age: ")
-    if age.isdigit() and int(age) >= 18:
+    if age.isdigit() and int(age) >= 18 and int(age) <=60:
         print("You are eligible.Kindly proceed to the website")
         valid = True
     else:
