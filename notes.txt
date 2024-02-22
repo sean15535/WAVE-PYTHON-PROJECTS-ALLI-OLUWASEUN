@@ -1,0 +1,2 @@
+types of data structure:
+list , tupples , dictionary and sets
