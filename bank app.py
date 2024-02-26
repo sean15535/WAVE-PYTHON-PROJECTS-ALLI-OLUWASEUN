@@ -1,6 +1,6 @@
 # This program simulates a basic banking system for Wema Bank Plc.
 # It generates a random 10-digit account number for new accounts and offers options for account opening, transfers,
-# airtime purchases, internet banking, balance inquiries, and bill payments.
+# airtime purchases, Data, balance inquiries, and bill payments.
 
 import random
 
@@ -15,13 +15,13 @@ print("Welcome to Wema Bank Plc. \nHow maywe help you today?")
 print("1. Open account\n2. Transfer\n3. Airtime\n4. Data\n5. Account Balance\n6. Bills & Utitilies")
 response = str(input(">>> " )).lower()
 if response == "1" or response == "open account": 
-    firstname = str(input("Your firstname\n>> ")).upper()
-    surname = str(input("Your lastname\n>> ")).upper()
-    other_name = str(input("Your other name\n>> ")).upper()
-    gender = str(input("Your Gender\n>> ")).upper()
-    email = str(input("Your email\n>> ")).upper()
+    firstname = str(input("Your firstname\n>> ")).capitalize()
+    surname = str(input("Your lastname\n>> ")).capitalize()
+    other_name = str(input("Your other name\n>> ")).capitalize()
+    gender = str(input("Your Gender\n>> ")).capitalize()
+    email = str(input("Your email\n>> ")).capitalize()
     number = int(input("Your Phone number\n>> "))
-    address = (input("your address\n>> ")).upper()
+    address = (input("your address\n>> ")).capitalize()
     dob = input("Your date of birth (MM/DD/YYYY)\n>> ")
     print("\nThank you for filling out the form.")
     print("Your account has been created successfully.")
@@ -208,40 +208,40 @@ elif response == "5" or response == "account balance":
 
 elif response == "6" or response == "bills and utilities":
      print("Choose the utility you want to pay for:")
-     print("1. Electricity Bill\n2. Water Bill\n3. Internet Bill\n4. Gas Bill")
+     print("1. Electricity Bill\n2. Water Bill\n3. Remitta Bill\n4. Gas Bill")
      utility_choice = input(">>> ").lower()
 
      if utility_choice == "1" or utility_choice == "electricity bill":
         # Process electricity bill payment
-        account_number = input("Enter your electricity account number: ")
+        account_number = input("Enter your electricity meter number: ")
         amount = float(input("Enter the amount you want to pay: "))
 
         # Placeholder for electricity bill payment process
-        print(f"Processing electricity bill payment of ₦{amount} for account number {account_number}...")
+        print(f"Processing electricity bill payment of ₦{amount} for meter number {account_number}...")
         print("Electricity bill payment successful! Thank you for banking with us! 😊")
 
      elif utility_choice == "2" or utility_choice == "water bill":
         # Process water bill payment
-        account_number = input("Enter your water account number: ")
-        amount = float(input("Enter the amount you want to pay: "))
+        account_number = int(input("Enter your water bill number: "))
+        amount = int(input("Enter the amount you want to pay: "))
 
         # Placeholder for water bill payment process
-        print(f"Processing water bill payment of ₦{amount} for account number {account_number}...")
+        print(f"Processing water bill payment of ₦{amount} for  number {account_number}...")
         print("Water bill payment successful! Thank you for banking with us! 😊")
 
-     elif utility_choice == "3" or utility_choice == "internet bill":
+     elif utility_choice == "3" or utility_choice == "remitta payment":
         # Process internet bill payment
-        account_number = input("Enter your internet account number: ")
-        amount = float(input("Enter the amount you want to pay: "))
+        account_number = input("Enter your Remitta  number: ")
+        amount = int(input("Enter the amount you want to pay: "))
 
         # Placeholder for internet bill payment process
-        print(f"Processing internet bill payment of ₦{amount} for account number {account_number}...")
-        print("Internet bill payment successful! Thank you for banking with us! 😊")
+        print(f"Processing Remitta payment of ₦{amount} for Remitta number {account_number}...")
+        print("Remitta payment successful! Thank you for banking with us! 😊")
 
      elif utility_choice == "4" or utility_choice == "gas bill":
         # Process gas bill payment
-        account_number = input("Enter your gas account number: ")
-        amount = float(input("Enter the amount you want to pay: "))
+        account_number = int(input("Enter your gas account number: "))
+        amount = int(input("Enter the amount you want to pay: "))
 
         # Placeholder for gas bill payment process
         print(f"Processing gas bill payment of ₦{amount} for gas number {account_number}...")
