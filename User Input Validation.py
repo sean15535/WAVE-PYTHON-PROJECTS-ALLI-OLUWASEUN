@@ -11,6 +11,8 @@ while not valid:
     if age.isdigit() and int(age) >= 18 and int(age) <=60:
         print("You are eligible.Kindly proceed to the website")
         valid = True
-    else:
+        break
+else:
         print("Please enter a valid age (must be at least 18 years old).")
+    
     

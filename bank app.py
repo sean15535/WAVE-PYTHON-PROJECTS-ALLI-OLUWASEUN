@@ -11,7 +11,7 @@ user_account = ""
 for _ in range(10):  # Generate 10 digits for the account number
     digit = random.randint(0, 9)  # Generate a random digit between 0 and 9
     user_account += str(digit)  # Append the digit to the account number
-print("Welcome to Wema Bank Plc. \nHow maywe help you today?")
+print("Welcome to Wema Bank Plc. \nHow may we help you today?")
 print("1. Open account\n2. Transfer\n3. Airtime\n4. Data\n5. Account Balance\n6. Bills & Utitilies")
 response = str(input(">>> " )).lower()
 if response == "1" or response == "open account": 
