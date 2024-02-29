@@ -30,8 +30,8 @@
 # print(fruits)
 
 #pop
-# my_list =[1,2,3]
-#print(my_list,pop())
+my_list =[1,2,3]
+print(my_list.pop(2))
 
 #index
 # my_list = [1,2,3,4,]
@@ -50,13 +50,17 @@
 # original_list = [1,2,3]
 # copied_list = original_list.copy()
 
-#count
-my_list = [1,2,3,2]
-count= my_list.count(2)
-print(count)
+# #count
+# my_list = [1,2,3,2]
+# count= my_list.count(2)
+# print(count)
 
-#remove
-my_list = [1,2,3,2]
-count= my_list.remove(2)
-print(count)
+# #remove
+# my_list = [1,2,3,2]
+# count= my_list.remove(2)
+# print(count)
 
+# #enumerate
+# my_list = ['apple', 'banana', 'cherry']
+# for index, fruit in enumerate(my_list):
+#     print(f"Index: {index}, Fruit: {fruit}")
