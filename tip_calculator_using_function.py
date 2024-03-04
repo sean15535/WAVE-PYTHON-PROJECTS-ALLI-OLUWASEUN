@@ -1,6 +1,6 @@
 def purchase():
     purchase_cost = int(input("How much was your meal? $ "))
-    return purchase_cost
+    return tip_calculator()
 
 def tip_calculator():
     tip = 0.03 * purchase()
