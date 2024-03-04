@@ -12,4 +12,8 @@ print(my_dict)
 my_dict.pop("city")
 print(my_dict)
 #Iterating Over a Dictionary using key()
-
+for key in my_dict:
+    print(key, my_dict[key])
+#Iterating over a dictionary using 
+for value in my_dict.values():
+    print(value)
