@@ -1,6 +1,9 @@
 def purchase():
     purchase_cost = int(input("How much was your meal? $ "))
-    return purchase_cost
+    if purchase_cost == purchase_cost.isdigit():
+        return tip_calculator()
+    else:
+        return "Key Error"
 
 def tip_calculator():
     tip = 0.03 * purchase()
