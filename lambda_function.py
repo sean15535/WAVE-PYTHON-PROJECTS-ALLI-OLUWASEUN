@@ -16,4 +16,4 @@
 #using lambda in loop
 for i in range(1,6):
     x = lambda i:i*5
-    print (x)
+    print (x(i))
