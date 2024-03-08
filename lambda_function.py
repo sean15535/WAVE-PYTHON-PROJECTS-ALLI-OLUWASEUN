@@ -13,5 +13,7 @@
 # print(x(11))
 # y = myfunc(3)
 # print(y(11))
-
-
+#using lambda in loop
+for i in range(1,6):
+    x = lambda i:i*5
+    print (x)
