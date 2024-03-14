@@ -2,3 +2,8 @@ types of data structure:
 list , tupples , dictionary and sets
 opertors in list 
 append: to add to a list
+
+
+
+pip install package name
+pypi.org 
