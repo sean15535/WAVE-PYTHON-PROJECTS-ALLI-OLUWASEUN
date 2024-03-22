@@ -9,6 +9,13 @@
 # root.mainloop()
 
 from tkinter import *
+from tkinter import messagebox
+
+def message():
+    response  = "Message Saved"
+    # word.config(text=response)
+    messagebox.showinfo("Message", response)
+
 window = Tk()
 window.minsize(width=500, height=500)
 window.title('Python App')
@@ -16,6 +23,6 @@ word = Label(text = "Enter Username")
 word.pack()
 input = Entry()
 input.pack()
-button =Button(text="Click")
+button =Button(text="Click", command=message)
 button.pack()
 window.mainloop()
