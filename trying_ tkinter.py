@@ -9,11 +9,10 @@
 # root.mainloop()
 
 from tkinter import *
-from tkinter import messagebox
+import tkinter.messagebox as messagebox
 
-def message():
-    response  = "Message Saved"
-    # word.config(text=response)
+def display_message():
+    response = "Message Saved"
     messagebox.showinfo("Message", response)
 
 window = Tk()

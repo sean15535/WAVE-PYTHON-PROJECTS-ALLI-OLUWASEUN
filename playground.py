@@ -48,7 +48,7 @@ def delete_task():
 def mark_completed():
     selected = listbox.curselection()
     if selected:
-        listbox.itemconfig(selected, bg="light gray")
+        listbox.itemconfig(selected, bg="green")
 
 # Create the main window
 root = Tk()

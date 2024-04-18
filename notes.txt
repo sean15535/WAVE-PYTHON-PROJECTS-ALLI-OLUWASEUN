@@ -10,3 +10,6 @@ pypi.org
 orm
 
 tkinter widgets used in python
+
+pip install pyinstaller
+pyinstaller name of fil
